@@ -1,0 +1,260 @@
+<!-- <ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Blank
+        </ion-title>
+    </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+
+    <div class="banner">
+
+        <div class="baner-clima-absolute">
+
+            <div class="baner-img">
+                <img class="banner-img" src="https://www.kait8.com/pb/resources/images/weather/weather-condition-icons/400x400/66_daily_forecast.png" alt="">
+            </div>
+            <div class="bannerTitle">
+                <p class="baner-title" style="font-family: 'Oswald', sans-serif;">
+                    {{(this.AllData.main.temp - 273.15).toFixed(1)}}
+                </p>
+                <h7>°C</h7>
+            </div>
+        </div>
+
+        <header class="header">
+
+        </header>
+    </div>
+
+    <div class="container">
+        <!-- primer contenedor -->
+        <div class="contenedorUno">
+
+            <div class="cont-Uno-titel">
+                <h1>3 Days <span>Forecast</span></h1>
+            </div>
+
+            <div class="suncontenedoruno">
+                <div class="cont-uno-Dos">
+                    <div class="cont-img">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABaklEQVRIS+WVQVKDQBBFf1PErfEGegLDBpbmBuYIgAfQdUxVSBWk3OYAAp4geIK4BRdyBL0B7hPamlSIYCAmQhYpZzdT0/91/56uIRx40YH18Q8Alv7WnkvzWzB3AXRAaDMjJqJATuWJ5SvJNpu3WtTXo45EmAnRUhFGAokN+1ELqiCVgIH+2gXxtFI8p5gCxthV/TJINcAMY4Aud3pljETm1kWZXRuAVeZDEITneywe2a5m/QwoAPpmpEuAt4fq+qpovOOpSiVgmbnEs7+IZzEM+JxiMvbVODtbV3BvhAERXdcBLGMZyZxbyoOvvIvtN8CMEgJOawMEg/HkeKpeAAzMiJsQz6qwPfWsCDCiFxCumoAw+MNxtfMi4CbsgWnaCID52fG0XgEgNgMztAAa1oEw8LlIW52NJmeiq0Gz9rVL2AJGvOCTu0x8o4KyzLPm265aGMqq862T/BsgL3o8gHxVu2adjzn+P/kLxzSdGTCJ2psAAAAASUVORK5CYII="
+                        />
+                    </div>
+
+                    <div class="cont-Titel">
+                        <p>Friday</p>
+                        <span>Rain</span>
+                    </div>
+                    <div class="cont-Box">
+                        <p class="grados">32°/23°</p>
+                    </div>
+                </div>
+
+                <div class="cont-uno-Dos">
+                    <div class="cont-img">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABSUlEQVRIS9WVsU7DMBCGv1O3qm8BO+yMDKAWllZihHcIEiMDIxJ9h3ZEgolWYmBkJzu8BcqIUdOkWM753CAKIluS8/3/2XefhQ0/suH8tBJwM54WhmTA/rrG/kbAPXBGwZ2c8O47jVXgbunRYyh9pmFljQrK5MIpjlcKzkORMEGZvMsNwjaOqRwx8WOaAssFY4QtbUFD4MvQGwVZaEg9g8rVqHbj5uzhGAK7lcALwr30eV68x7a0bIhUN7g5FzgO1LgPHuWYayuHKVA5vzJNCJd1JVqcLTBjDOwkqsxlQBaLWQnULegPkv/N3IZq8LQcvyegOXQ/uUWqwLI97UPukMkhefIMYgFmmyqTm0RFOTgBW6p2HXkdldNhUjtvNWgpthioUNllwU5lSwR2UXbpLPoOrrus2GXS1Bqo/3OjpQjb5n8S122SabGfO/WeGcYIvMsAAAAASUVORK5CYII="
+                        />
+                    </div>
+                    <div class="cont-Titel">
+                        <p>Saturday</p>
+                        <span>Clear</span>
+                    </div>
+                    <div class="cont-Box" style="background-color: #cee0ff; color:black">
+                        <p class="grados">34°/23°</p>
+                    </div>
+                </div>
+                <div class="cont-uno-Dos">
+                    <div class="cont-img">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABW0lEQVRIS+2UQU7CQBSG/9eAW/EGegLppl3KDeQIbT2ArpGEmlDilgNI6wnAE+C2dWGPoDeoe+hvhlC0QmmwsGN208z7vvf+yVRw4CUH5uMoKE24NCLXem/MtNktyBaAJgQNErGITGppbegGerLNslXQsaKmJpgq6EYIkUCj3X8yJ0WSQkHXemtBOC6E/yKmgD0YGcEmSbHACWNALktDVgeIpMb6xaa41gTLznsQqMx3WHzoj0z3b0FO0HEiSwP8Hairo+riPd/QCwWLzjVO/wPPaggETDEcBEacfVtNcG+HExG5riJY1BLJjHX9MdA/1PZH4ESJAKeVBcpBPHu+YeUEXSfiPuDZFH3fOMsL7OgVgqt9SAh+eiPzPC+4CdugjPciIF8832znBGrTdUIXkF4VCYGveVpvrl1yBl0+NHfXuFQsIOI5T+4y+NoEVTovqi39XVeVHgWlCX4DK0J5Gb5c1rQAAAAASUVORK5CYII="
+                        />
+                    </div>
+                    <div class="cont-Titel">
+                        <p>Sunday </p>
+                        <span>Cloudy</span>
+                    </div>
+                    <div class="cont-Box" style="background-color: #cee0ff; color:black">
+                        <p class="grados">31°/23°</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Segundo contenedor -->
+        <div class="contenedorDos">
+            <div class="cont-dos-Dos-Titel">
+                <h1>Place to <span>Visit</span></h1>
+            </div>
+            <!-- imagen -->
+            <div class="cont-dos-Dos-img">
+                <div class="mapUno">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACN0lEQVRIS7WV4XHaQBCF36KJJHOaiVNBoIJABSEVhFQQXIGhEuMKjCtIUkGUCkwHJh3AjM4gPGIze77TCCEJ5Qf3U7e33+57eyfChRddOD/OAni77b1m2S0TjQAMbEFLYo7fed49XV2tmopsBOyTZM5Et40JmOd+FM3qYmoBqdZLAJ/swUd6SyTfsE+SARNNAXx3HQVKDasglYC8cuYNASOXuJzAgIAYRO+J+d6PIoEerROAaL4/HJ4lipiHktx+u2PrAQFLv9OZif62myeJ9zudftmTE4Cr3lVkkmfZE4iuj0pjXvueN5SEqdYLkauqixOA095Vn2r9E8BXZv4TeN5EIGmWLYjoM4BfgVLjQhfLshdVAJYkgVJmL02StWhcbN/JyMAqVKpv4rQ+Oue6bQ/odj8Q0VoOFgB/Q6V6/wXYJUks7VdIFAeed2MleqC3i2cket1uR4fD4bfIGEaRfM9XVQfGMCaahd3u3Jq8FJlKJm98zxuIybuXlykx3wF4DJQyPjVJNAbwo6ivlWReGtOpG8md1isCPgL4FiglQ1EPkB13gJhv/CiSjmrXPkkmTPTAQO7HWUCqtekCMutK9Z25ZQozX++1frZ35KR6c1nrSnNmM3McRtGXqjh3Z6rMrfXAbdjqVtbcRaCUmSC33O0F88ZXqlfX5bnnOn/MAOSQYvKmx7BRIldp8cUUCAB5k8ZS+bnkrQASVIKgbfLWgBxCZEaWmCd1/4jyMJz9JzfdgTZ7Fwf8A41LYSgmLSfAAAAAAElFTkSuQmCC"
+                    />
+                </div>
+                <div class="titleimg">
+                    <p class="">Arab Street<br> Singapore
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- contenedor tres -->
+        <div class="contenedorTres">
+
+            <div class="Top">
+                <div class="cruz">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAXElEQVRIS2NkoDFgpLH5DKMWEAxhkoLozOnz/0EmmpgaEq2PaIUgg0ctIBhhQyeIYC4l6CU0BdhSF9ZURHMLcLl86MTBqA+QQ2BwlUWk5guQepJ8MGoBOSFAUA8A28U4Gbr9MEEAAAAASUVORK5CYII=" />
+                </div>
+
+                <div class="reviews">
+                    <h4>Top de reviwes</h4>
+                </div>
+
+                <div class="foto">
+                    <img src="../../assets/img/persoUna.jpg" alt="">
+                </div>
+                <div class="foto">
+                    <img src="../../assets/img/persoDos.jpg" alt="">
+                </div>
+                <div class="foto">
+                    <img src="../../assets/img/persoTres.jpg" alt="">
+                </div>
+                <div class="foto">
+                    <h4>9+</h4>
+                </div>
+            </div>
+
+            <div class="cont-sub-treDos">
+                <div class="puntoUno">
+                    <div class="mapDos">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACN0lEQVRIS7WV4XHaQBCF36KJJHOaiVNBoIJABSEVhFQQXIGhEuMKjCtIUkGUCkwHJh3AjM4gPGIze77TCCEJ5Qf3U7e33+57eyfChRddOD/OAni77b1m2S0TjQAMbEFLYo7fed49XV2tmopsBOyTZM5Et40JmOd+FM3qYmoBqdZLAJ/swUd6SyTfsE+SARNNAXx3HQVKDasglYC8cuYNASOXuJzAgIAYRO+J+d6PIoEerROAaL4/HJ4lipiHktx+u2PrAQFLv9OZif62myeJ9zudftmTE4Cr3lVkkmfZE4iuj0pjXvueN5SEqdYLkauqixOA095Vn2r9E8BXZv4TeN5EIGmWLYjoM4BfgVLjQhfLshdVAJYkgVJmL02StWhcbN/JyMAqVKpv4rQ+Oue6bQ/odj8Q0VoOFgB/Q6V6/wXYJUks7VdIFAeed2MleqC3i2cket1uR4fD4bfIGEaRfM9XVQfGMCaahd3u3Jq8FJlKJm98zxuIybuXlykx3wF4DJQyPjVJNAbwo6ivlWReGtOpG8md1isCPgL4FiglQ1EPkB13gJhv/CiSjmrXPkkmTPTAQO7HWUCqtekCMutK9Z25ZQozX++1frZ35KR6c1nrSnNmM3McRtGXqjh3Z6rMrfXAbdjqVtbcRaCUmSC33O0F88ZXqlfX5bnnOn/MAOSQYvKmx7BRIldp8cUUCAB5k8ZS+bnkrQASVIKgbfLWgBxCZEaWmCd1/4jyMJz9JzfdgTZ7Fwf8A41LYSgmLSfAAAAAAElFTkSuQmCC"
+                        />
+                    </div>
+
+                    <div class="titleimgUno">
+                        <p class="">Art science<br> Museum
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cont-sub-tretres">
+                    <div class="punto">
+                        <div class="mapTres">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACN0lEQVRIS7WV4XHaQBCF36KJJHOaiVNBoIJABSEVhFQQXIGhEuMKjCtIUkGUCkwHJh3AjM4gPGIze77TCCEJ5Qf3U7e33+57eyfChRddOD/OAni77b1m2S0TjQAMbEFLYo7fed49XV2tmopsBOyTZM5Et40JmOd+FM3qYmoBqdZLAJ/swUd6SyTfsE+SARNNAXx3HQVKDasglYC8cuYNASOXuJzAgIAYRO+J+d6PIoEerROAaL4/HJ4lipiHktx+u2PrAQFLv9OZif62myeJ9zudftmTE4Cr3lVkkmfZE4iuj0pjXvueN5SEqdYLkauqixOA095Vn2r9E8BXZv4TeN5EIGmWLYjoM4BfgVLjQhfLshdVAJYkgVJmL02StWhcbN/JyMAqVKpv4rQ+Oue6bQ/odj8Q0VoOFgB/Q6V6/wXYJUks7VdIFAeed2MleqC3i2cket1uR4fD4bfIGEaRfM9XVQfGMCaahd3u3Jq8FJlKJm98zxuIybuXlykx3wF4DJQyPjVJNAbwo6ivlWReGtOpG8md1isCPgL4FiglQ1EPkB13gJhv/CiSjmrXPkkmTPTAQO7HWUCqtekCMutK9Z25ZQozX++1frZ35KR6c1nrSnNmM3McRtGXqjh3Z6rMrfXAbdjqVtbcRaCUmSC33O0F88ZXqlfX5bnnOn/MAOSQYvKmx7BRIldp8cUUCAB5k8ZS+bnkrQASVIKgbfLWgBxCZEaWmCd1/4jyMJz9JzfdgTZ7Fwf8A41LYSgmLSfAAAAAAElFTkSuQmCC"
+                            />
+                        </div>
+                        <div class="titleimgDos">
+                            <p class="">Fountain<br> of palabra</p>
+                        </div>
+
+                        <div class="Boton">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAXElEQVRIS2NkoDFgpLH5DKMWEAxhkoLozOnz/0EmmpgaEq2PaIUgg0ctIBhhQyeIYC4l6CU0BdhSF9ZURHMLcLl86MTBqA+QQ2BwlUWk5guQepJ8MGoBOSFAUA8A28U4Gbr9MEEAAAAASUVORK5CYII=" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contenedor cuatro -->
+
+        <div class="contenedorCua">
+
+            <div class="cont-sub-cuatro">
+                <div class="cont-sub-cuatroUno">
+                    <div class="cont-sub-cuatroDos">
+                        <div class="imgsol">
+                            <img src="https://www.kait8.com/pb/resources/images/weather/weather-condition-icons/400x400/66_daily_forecast.png" alt="">
+                        </div>
+
+                        <div class="gradosCua">
+                            <h1 style="font-family: 'Oswald', sans-serif;">{{(this.AllDataDos.main.temp - 273.15).toFixed(1)}}9</h1>
+                            <p>°C</p>
+                        </div>
+                        <div style="    display: flex;
+                        align-items: center;">
+                            <hr style="    border-right: solid 1px #afafaf;
+                            height: 60%;">
+                        </div>
+                        <div class="titleCua">
+                            <h1>Lyon</h1>
+                            <h4>Francia</h4>
+                        </div>
+                    </div>
+
+                    <div class="PieCardDos">
+                        <div class="humidityDos">
+                            <h4>Humidity 64%</h4>
+                        </div>
+                        <div style="    display: flex;
+                        align-items: center;">
+                            <hr style="    border-right: solid 1px #afafaf;
+                            height: 60%;">
+                        </div>
+                        <div class="humidityDos">
+                            <h4>Northmost</h4>
+                        </div>
+                        <div style="    display: flex; align-items: center;">
+                            <hr style="border-right: solid 1px #afafaf; height: 60%;">
+                        </div>
+                        <div class="humidityDos">
+                            <h4>8.3 km/h</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cont-sub-cuatro">
+
+                <div class="cont-sub-cuatroDos">
+                    <div class="imgsol">
+                        <img src="https://www.wbtv.com/pb/resources/images/weather/weather-condition-icons/400x400/99_daily_forecast.png" alt="">
+                    </div>
+
+                    <div class="gradosCua">
+                        <h1 style="font-family: 'Oswald', sans-serif;"> {{(this.AllDataTres.main.temp - 273.15).toFixed(1)}}</h1>
+                        <p>°C</p>
+                    </div>
+
+                    <div style="    display: flex;
+                        align-items: center;">
+                        <hr style="    border-right: solid 1px #afafaf;
+                            height: 60%;">
+                    </div>
+                    <div class="titleCua">
+                        <h1>Paris</h1>
+                        <h4>Francia</h4>
+                    </div>
+                </div>
+
+                <div class="PieCardDos">
+                    <div class="humidityDos">
+                        <h4>Humidity 48%</h4>
+                    </div>
+                    <div style="    display: flex;
+                        align-items: center;">
+                        <hr style="    border-right: solid 1px #afafaf;
+                            height: 60%;">
+                    </div>
+                    <div class="humidityDos">
+                        <h4>West</h4>
+                    </div>
+                    <div style="    display: flex; align-items: center;">
+                        <hr style="border-right: solid 1px #afafaf; height: 60%;">
+                    </div>
+                    <div class="humidityDos">
+                        <h4>0.3 km/h</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imglocalizar">
+            </div>
+        </div>
+    </div>
+
+
+
+
+</ion-content>

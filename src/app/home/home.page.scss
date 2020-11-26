@@ -1,0 +1,525 @@
+        .header {
+            width: 100%;
+            height: 50vh;
+            margin: 2%;
+            background-image: url(../../assets/img/banner.jpg);
+            background-position-y: 6%;
+            color: white;
+            border-radius: 40px;
+            background-size: cover;
+        }
+        
+        .banner {
+            display: flex;
+        }
+        
+        .banner-img {
+            background-color: purple;
+            width: 100%;
+            height: 50%;
+            border-radius: 20px;
+            padding: 19px;
+        }
+        
+        .bannerTitle {
+            display: flex;
+            justify-content: center;
+            /* justify-items: center; */
+            margin-top: 23%;
+        }
+        
+        .bannerTitle .h7 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .baner-title {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            font-size: 25px;
+        }
+        
+        .baner-clima-absolute {
+            background-color: #7C62CA;
+            color: white;
+            position: fixed;
+            margin-top: 12%;
+            border-radius: 20px;
+            width: 6%;
+            height: 170px;
+            box-shadow: 2px 2px 10px #666;
+        }
+        
+        .container {
+            margin: 2%;
+            width: 100%;
+            display: flex;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .suncontenedoruno {
+            margin: 0 12px;
+        }
+        /* contenedor Uno */
+        
+        .contenedorUno {
+            width: 20%;
+            height: 50vh;
+        }
+        
+        .cont-Uno-titel span {
+            font-weight: 200;
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .cont-Uno-titel h1 {
+            padding-bottom: 20px;
+            margin: 0 0 7%;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .cont-uno-Dos {
+            display: flex;
+            margin: -1px -11px 10px;
+            width: 100%;
+            border-radius: 125px;
+            box-shadow: 2px 2px 10px #666;
+            justify-content: space-between;
+            height: 78px;
+        }
+        
+        .cont-img {
+            padding: 15px;
+            background-position: 50% 50%;
+            background-color: white;
+            align-items: center;
+            border-radius: 23px;
+        }
+        
+        .cont-img img {
+            width: 43px;
+            padding-top: 3px;
+        }
+        
+        .cont-Titel {
+            padding: 10px 5px;
+            width: 94px;
+            font-weight: 500;
+            line-height: 12px;
+        }
+        
+        .cont-Titel p {
+            padding: 10px 0 10px;
+            font-weight: 500;
+            margin: 0;
+        }
+        
+        .cont-Titel span {
+            color: gray;
+        }
+        
+        .cont-Box {
+            background-position: 50% 50%;
+            background-color: #7C62CA;
+            color: white;
+            border-radius: 20%;
+            align-items: center;
+            display: flex;
+            width: 77px;
+            justify-content: center;
+        }
+        /* segundo contenedor */
+        
+        .contenedorDos {
+            width: 18%;
+            margin: 0px 15px;
+            height: 50vh;
+            display: block;
+        }
+        
+        .cont-dos-Dos-Titel h1 {
+            padding-bottom: 20px;
+            margin: 0 0 7%;
+        }
+        
+        .cont-dos-Dos-Titel h1 span {
+            font-weight: 200;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .cont-dos-Dos-img {
+            width: 100%;
+            height: 36vh;
+            background-image: url(../../assets/img/edificio.jpg);
+            background-size: cover;
+            background-position-y: 89%;
+            color: white;
+            border-radius: 30px;
+            display: flex;
+        }
+        
+        .mapUno {
+            display: flex;
+            padding: 24px 27px;
+            height: 12px;
+        }
+        
+        .mapUno img {
+            width: 33px;
+            height: 33px;
+        }
+        
+        .titleimg {
+            margin-top: 4px;
+            width: 100px;
+            height: 40px;
+        }
+        /* contendore tres */
+        
+        .contenedorTres {
+            width: 21%;
+            height: 50vh;
+            display: block;
+            margin-left: 17px;
+        }
+        
+        .Top {
+            margin: 0;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            color: #CCCBCF;
+            height: 5vh;
+        }
+        
+        .foto img {
+            /* margin-right: 53px; */
+            width: 43px;
+            height: 45px;
+            border-radius: 20%;
+            /* border: gray; */
+            box-shadow: 2px 2px 10px #666;
+        }
+        
+        .foto {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 50px;
+        }
+        
+        .cuadro {
+            background-color: gray;
+            width: 24px;
+            height: 4vh;
+            border-radius: 20%;
+            border: gray;
+            box-shadow: 2px 2px 10px #666;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        
+        .foto h4 {
+            color: white;
+            margin: 0;
+            width: 41px;
+            height: 45px;
+            background-color: gray;
+            border-radius: 20%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            box-shadow: 2px 2px 10px #666;
+        }
+        
+        .reviews {
+            margin: 0;
+            padding: 0 12px;
+            display: flex;
+        }
+        
+        .cruz {
+            margin: 0;
+            display: flex;
+        }
+        /* imagenes */
+        
+        .puntoUno {
+            margin-top: 40px;
+            height: 12vh;
+            background-image: url(../../assets/img/imag1.jpg);
+            background-size: cover;
+            background-position-y: 81%;
+            color: white;
+            border-radius: 30px;
+            display: flex;
+        }
+        
+        .mapDos {
+            display: flex;
+            padding: 24px 27px;
+            height: 12px;
+        }
+        
+        .mapDos img {
+            width: 33px;
+            height: 33px;
+        }
+        
+        .titleimgUno {
+            margin-top: 4px;
+            width: 100px;
+            height: 40px;
+        }
+        /* contenedor 3.1 */
+        
+        .cont-sub-tretres {
+            display: flex;
+        }
+        
+        .punto {
+            width: 100%;
+            margin-top: 25px;
+            height: 20vh;
+            background-image: url(../../assets/img/imagen2.jpg);
+            background-size: cover;
+            background-position-y: 89%;
+            color: white;
+            border-radius: 30px;
+            display: flex;
+        }
+        
+        .Boton {
+            width: 29%;
+            margin-left: auto;
+            border-radius: 30px;
+            background-color: #7C62CA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .Boton img {
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mapTres {
+            display: flex;
+            padding: 24px 27px;
+            height: 12px;
+        }
+        
+        .mapTres img {
+            width: 33px;
+            height: 33px;
+        }
+        
+        .titleimgDos {
+            margin-top: 4px;
+            width: 100px;
+            height: 40px;
+        }
+        /* contendore cuatro */
+        
+        .contenedorCua {
+            width: 26%;
+            height: 50vh;
+            display: block;
+            margin-left: 50px;
+            margin-bottom: 12px;
+        }
+        
+        .cont-sub-cuatro {
+            display: block;
+            background-color: white;
+            width: 100%;
+            box-shadow: 2px 2px 10px #666;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            color: black;
+        }
+        
+        .cont-sub-cuatroDos {
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+            /* width: 323px; */
+            height: 80%;
+        }
+        
+        .imgsol {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cee0ff;
+            padding: 15px;
+            border-radius: 20px;
+            width: 25%;
+        }
+        
+        .imgsol img {
+            width: 60px;
+            height: 60px;
+            /* margin-right: 21px; */
+        }
+        
+        .gradosCua {
+            width: 30%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+        
+        .gradosCua p {
+            font-size: 12px;
+            color: #666;
+            margin-top: 0;
+        }
+        
+        .titleCua {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0px 0 0 4%;
+            width: 45%;
+        }
+        
+        .titleCua h1 {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+        
+        .titleCua h4 {
+            font-family: 'Roboto', sans-serif;
+            margin: 0%;
+        }
+        
+        .cont-sub-cuatroUno {
+            margin-top: -143px;
+        }
+        
+        .PieCardDos {
+            display: flex;
+        }
+        
+        .humidityDos {
+            justify-content: center;
+            display: flex;
+            width: 33%;
+            margin-top: 10px;
+        }
+        
+        .humidityDos h4 {
+            color: gray;
+            padding: 0;
+            margin: 0;
+            height: 25px;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+        
+        .imglocalizar {
+            background-image: url(../../assets/img/imag1.jpg);
+            width: 100%;
+            /* margin-top: 28px; */
+            height: 26vh;
+            background-size: cover;
+            /* background-position-y: 89%; */
+            /* color: white; */
+            border-radius: 30px;
+            display: flex;
+        }
+        /* responsive */
+        
+        @media screen and (max-width: 680px) {
+            .header {
+                background-size: cover;
+                width: 95%;
+                height: 39vh;
+                margin: 3%;
+                background-position-y: unset;
+            }
+            .container {
+                flex-direction: column;
+            }
+            .contenedorUno {
+                width: 95%;
+                margin: auto;
+                height: auto;
+                margin-top: -261px;
+                margin-bottom: 37px;
+            }
+            .cont-uno-Dos {
+                background-color: white;
+            }
+            .cont-Uno-titel h1 {
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .contenedorDos {
+                width: 95%;
+                margin: auto;
+            }
+            .baner-clima-absolute {
+                width: 15%;
+            }
+            .cont-dos-Dos-img {
+                width: 95%;
+            }
+            .contenedorTres {
+                width: 95%;
+                margin: auto;
+                height: 566px;
+            }
+            .contenedorCua {
+                height: 600px;
+                width: 95%;
+                margin: auto;
+            }
+            .cont-sub-cuatroUno {
+                margin: auto;
+            }
+            .cont-dos-Dos-img {
+                width: 95%;
+            }
+            .Top {
+                height: 50px;
+                justify-content: flex-end;
+                width: 95%;
+            }
+            .cont-dos-Dos-Titel h1 {
+                margin: 0;
+                padding-bottom: 28px;
+            }
+            .punto {
+                height: 245px;
+            }
+            .puntoUno {
+                margin-top: 28px;
+                height: 150px;
+                width: 95%;
+            }
+            .cont-sub-tretres {
+                width: 95%;
+            }
+            .cont-sub-cuatro {
+                width: 95%;
+            }
+            .imglocalizar {
+                width: 95%;
+                height: 45%;
+            }
+        }
