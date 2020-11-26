@@ -13,7 +13,7 @@ Es dedicado para la empresa Gradiweb.
 Dale clic a las ramas y clic en Branches.
 hay te mostrara el codigo o las carpetas si le das clic en el nombre master.
 
-## Pre-requisitos 📋
+## Pre-requisitos
 
 Ten en cuenta, que se está usando el framework Angular y lo puedes abrir con un editor de texto mas recomendado visual code. 
 
@@ -32,7 +32,7 @@ La aplicacion web esta trabajando con responsive osea multiplataformas.
 * [Visual Code](https://code.visualstudio.com/) - gestor
 * [Api](https://openweathermap.org/current#current_JSON) - Api
 
-## Autores ✒️
+## Autores
 
 * **Maura Tamayo**
 
